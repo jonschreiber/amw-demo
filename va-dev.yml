@@ -8,18 +8,18 @@ env:
    - version
 steps:
   - type: VulnerabilityAudit
-  name: "Vulnerability Audit Step"
-  configuration:
-    buildType: maven
-    pomFilePath: ${OCI_PRIMARY_SOURCE_DIR}/pom.xml
-    packagesToIgnore:
-      - com.oracle.*
-      - org.apache.logging
-    maxPermissibleCvssV2Score: 10.0
-    maxPermissibleCvssV3Score: 10.0
-  knowledgeBaseId: ocid1.service.oc1.iad.amaaaaaansx72maajcpbx6e2w7grrtxszb5z7nnmium7o6z7ax4ixn7rpdta
-  vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaarcj6suq4ces2hqobkgzsorhg7xr5bvyrydnc7hil4vqbpjgaslha
-  vulnerabilityAuditName: report_success
+    name: "Vulnerability Audit Step"
+    configuration:
+      buildType: maven
+      pomFilePath: ${OCI_PRIMARY_SOURCE_DIR}/pom.xml
+      packagesToIgnore:
+        - com.oracle.*
+        - org.apache.logging
+      maxPermissibleCvssV2Score: 10.0
+      maxPermissibleCvssV3Score: 10.0
+    knowledgeBaseId: ocid1.service.oc1.iad.amaaaaaansx72maajcpbx6e2w7grrtxszb5z7nnmium7o6z7ax4ixn7rpdta
+    vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaarcj6suq4ces2hqobkgzsorhg7xr5bvyrydnc7hil4vqbpjgaslha
+    vulnerabilityAuditName: report_success
   - type: Command
     name: "See maven repo before build"
     command: |
