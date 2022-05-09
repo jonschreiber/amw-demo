@@ -19,6 +19,6 @@ steps:
       - org.apache.logging
     maxPermissibleCvssV2Score: 1.0
     maxPermissibleCvssV3Score: 1.0
-    knowledgeBaseId: ${ADM-KNOWLEDGEBASE}
-    vulnerabilityAuditCompartmentId: ${AUDIT-COMPARTMENT}
+  knowledgeBaseId: ${ADM-KNOWLEDGEBASE}
+  vulnerabilityAuditCompartmentId: ${AUDIT-COMPARTMENT}
   vulnerabilityAuditName: report_failed
