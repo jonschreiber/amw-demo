@@ -21,8 +21,8 @@ steps:
       - org.apache.logging
     maxPermissibleCvssV2Score: 10.0
     maxPermissibleCvssV3Score: 10.0
-  knowledgeBaseId: ${ADM-KNOWLEDGEBASE}
-  vulnerabilityAuditCompartmentId: ${AUDIT-COMPARTMENT}
+  knowledgeBaseId: ${ADM_KNOWLEDGEBASE}
+  vulnerabilityAuditCompartmentId: ${AUDIT_COMPARTMENT}
   vulnerabilityAuditName: report_succeeded_multiple
 - type: VulnerabilityAudit
   name: "Vulnerability Audit Step 2"
@@ -34,6 +34,6 @@ steps:
       - org.apache.logging
     maxPermissibleCvssV2Score: 1.0
     maxPermissibleCvssV3Score: 1.0
-  knowledgeBaseId: ${ADM-KNOWLEDGEBASE}
-  vulnerabilityAuditCompartmentId: ${AUDIT-COMPARTMENT}
+  knowledgeBaseId: ${ADM_KNOWLEDGEBASE}
+  vulnerabilityAuditCompartmentId: ${AUDIT_COMPARTMENT}
   vulnerabilityAuditName: report_failed_multiple

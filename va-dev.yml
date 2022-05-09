@@ -18,8 +18,8 @@ steps:
         - org.apache.logging
       maxPermissibleCvssV2Score: 10.0
       maxPermissibleCvssV3Score: 10.0
-    knowledgeBaseId: ${ADM-KNOWLEDGEBASE}
-    vulnerabilityAuditCompartmentId: ${AUDIT-COMPARTMENT}
+    knowledgeBaseId: ${ADM_KNOWLEDGEBASE}
+    vulnerabilityAuditCompartmentId: ${AUDIT_COMPARTMENT}
     vulnerabilityAuditName: report_success
   - type: Command
     name: "See maven repo before build"
